@@ -1,0 +1,73 @@
+/* font */
+@font-face {
+    font-family: font;
+    src: url(../public/OverusedGrotesk-SemiBold.ttf);
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: rgb(200, 200, 200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.particula{
+    display: block;
+}
+
+/* container */
+.container {
+    margin-top: 3rem;
+    display: block;
+}
+
+.containerMobile{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+  }
+
+/* spam */
+.spam{
+    color: white;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        display: none;
+
+    }
+
+    .containerMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 50px;
+        
+    }
+    .containerMobile h1 {
+        color: white;
+     
+    }
+    .containerMobile h2 {
+        color:rgb(200, 200, 200);
+    }
+
+    .particula{
+        display: none;
+    }
+}
